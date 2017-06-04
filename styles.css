@@ -47,8 +47,14 @@ html {
 }
 
 .hero-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
@@ -207,21 +213,25 @@ html {
 }
 
 .tri-content img {
-  transform: scale(.65);
+  -webkit-transform: scale(.65);
+          transform: scale(.65);
   position: absolute; }
   @media only screen and (min-width: 700px) {
     .tri-content img {
-      transform: scale(.8);
+      -webkit-transform: scale(.8);
+              transform: scale(.8);
     }
   }
   @media only screen and (min-width: 1000px) {
     .tri-content img {
-      transform: scale(.9);
+      -webkit-transform: scale(.9);
+              transform: scale(.9);
     }
   }
   @media only screen and (min-width: 1200px) {
     .tri-content img {
-      transform: scale(1);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
   }
 
