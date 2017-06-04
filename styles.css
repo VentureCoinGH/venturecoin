@@ -20,8 +20,26 @@ html {
 }
 
 .banner {
-  background-image: url("./assets/top gradient background.png");
-  background-size: 100% 110%;
+  position: relative;
+  height: 100vh;
+}
+
+.banner-main {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20vh;
+  overflow: hidden;
+}
+
+.banner-bg img {
+  height: auto;
+  width: 100%;
 }
 
 .banner .pitch {
@@ -178,11 +196,13 @@ html {
   left: 0;
   right: 0;
   top: 73vh;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .tri-content {
   position: relative;
-  height: 35vh;
+  height: 40%;
   width: 100%;
 }
 
