@@ -201,14 +201,18 @@ html {
   position: absolute;
   left: 0;
   right: 0;
-  top: 73vh;
+  top: 95vh;
   height: 100%;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
+  @media only screen and (min-width: 700px) {
+    #triangles {
+      top: 73vh;
+    }
+  }
 
 .tri-content {
   position: relative;
-  height: 40%;
+  height: 45%;
   width: 100%;
 }
 
