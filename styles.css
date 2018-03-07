@@ -30,13 +30,15 @@ html {
 }
 
 .banner-bg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   position: absolute;
   background-image: linear-gradient(90deg, #634AB5 0%, #F40683 100%);
   min-height: 700px;
   height: 100vh;
   width: 100vw;
   top: 0;
-  overflow: hidden;
 }
 
 .banner-bg img {
@@ -48,6 +50,16 @@ html {
 
 .banner .pitch {
   font-size: 18px;
+}
+
+.banner-copy {
+  margin-top: -15vh;
+}
+
+@media only screen and (min-width: 700px) {
+  .banner-copy {
+    margin-top: -30vh;
+  }
 }
 
 .hero-logo {
@@ -70,21 +82,33 @@ html {
     }
   }
 
-.intro {
-  margin-top: 20px; }
-  @media only screen and (min-width: 1000px) {
-    .intro {
-      margin-top: 110px;
-    }
-  }
-  @media only screen and (min-width: 1400px) {
-    .intro {
-      margin-top: 140px;
-    }
+.hero-copy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.hero-copy-text {
+  flex: 0 0 100%;
+  margin: 0 20px;
+}
+
+.hero-copy-main {
+  font-size: 1.75rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  .hero-copy-text {
+    flex: 0 0 40%;
   }
 
-.banner p.tag-line {
-  font-size: 22px;
+  .hero-copy-main {
+    text-align: right;
+  }
 }
 
 .nav-wrapper {
@@ -92,15 +116,6 @@ html {
   padding-top: 20px;
 }
 
-.main-line {
-  font-size: 1.75rem;
-  line-height: 1.6;
-  text-align: center;}
-  @media only screen and (min-width: 600px) {
-    .main-line {
-      text-align: right;
-    }
-  }
 .footer-align {
   font-size: 1.25rem;
   line-height: 1.6;
@@ -116,46 +131,66 @@ html {
   font-size: 16px;
 }
 
-.intro {
-  padding: 100px 0;
-}
-
 .team {
-  /* margin: 0 0 100px 0; */
-  margin: 6em auto 0;
+  margin: 100px auto 0;
 }
 
-.team p {
-  font-size: 16px;
+@media only screen and (min-width: 700px) {
+  .team {
+    margin-top: -50px;
+  }
 }
 
-.underlined-title {
+.investments {
+  margin: 50px auto 300px;
+}
+
+.section-title {
   font-size: 30px;
   max-width: 200px;
-  margin: 1.78rem auto 1.424rem;
   font-family: 'Comfortaa Regular';
   padding: 0 0 .5em 0;
-  border-bottom: 3px solid #fff;
 }
 
 .avatar {
   height: 170px;
 }
 
-.who-title {
-  margin-top: 1em;
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.who-name, .who-position {
+.section p {
+  font-size: 16px;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 400px;
+  padding-top: 100px;
+  margin: 0 auto;
   display: block;
 }
 
-.who-name {
+.section-image-wrapper,
+.section-copy {
+  flex: 0 0 40%;
+  margin: 0 20px;
+}
+
+.section-name, .section-description {
+  display: block;
+}
+
+.section-name {
   font-weight: 800;
   font-size: 1.3rem;
 }
 
-.who-position {
+.section-description {
   font-weight: 500;
   color: #777;
   font-size:1.125rem;
