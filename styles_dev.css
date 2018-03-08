@@ -12,17 +12,12 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
+.content-wrapper {
   overflow-x: hidden;
 }
 
 #venturecoin {
   font-family: 'Comfortaa-Light';
-}
-
-.banner {
-  position: relative;
-  height: 100vh;
 }
 
 .banner-main {
@@ -108,7 +103,7 @@ body {
 }
 
 .team {
-  margin: 250px auto 0;
+  margin: 140px auto 0;
 }
 
 .investments {
@@ -117,7 +112,7 @@ body {
 
 @media only screen and (min-width: 700px) {
   .team {
-    margin-top: 60px;
+    margin-top: -20px;
   }
 
   .investments {
