@@ -12,6 +12,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #venturecoin {
   font-family: 'Comfortaa-Light';
 }
@@ -104,7 +108,7 @@ html {
 }
 
 .team {
-  margin: 100px auto 0;
+  margin: 250px auto 0;
 }
 
 .investments {
@@ -113,7 +117,7 @@ html {
 
 @media only screen and (min-width: 700px) {
   .team {
-    margin-top: -20px;
+    margin-top: 60px;
   }
 
   .investments {
@@ -282,28 +286,23 @@ html {
 }
 
 #triangles {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 79vh;
-  height: 100%;
-  overflow-x: hidden; }
-  @media only screen and (min-width: 700px) {
-    #triangles {
-      top: 62vh;
-    }
-  }
+  height: 100vh;
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
 
 .tri-content {
   position: relative;
-  height: 35%;
+  height: 22%;
   margin-left: -5em;
   width: 160%;
 }
 
 @media only screen and (min-width: 700px) {
   .tri-content {
-    height: 45%;
+    height: 48%;
     width: 100%;
     margin-left: 0;
   }
