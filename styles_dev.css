@@ -1,5 +1,3 @@
-/* AUTOPREFIXED CSS FOR PROD */
-
 @font-face {
     font-family: 'Comfortaa Regular';
     src: url('assets/logo font/Comfortaa-Regular.ttf') format('truetype');
@@ -20,18 +18,10 @@ html {
 }
 
 .banner-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, right top, from(#634AB5), to(#F40683));
-  background-image: -webkit-linear-gradient(left, #634AB5 0%, #F40683 100%);
-  background-image: -o-linear-gradient(left, #634AB5 0%, #F40683 100%);
   background-image: linear-gradient(90deg, #634AB5 0%, #F40683 100%);
   min-height: 700px;
   height: 100vh;
@@ -56,33 +46,26 @@ html {
 
 .hero-logo {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
 }
 
 .hero-copy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-top: 48px;
 }
 
 .hero-copy-text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   margin: 0 20px;
 }
 
@@ -98,9 +81,7 @@ html {
   }
 
   .hero-copy-text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+    flex: 0 0 40%;
   }
   
   .hero-copy-main {
@@ -134,23 +115,14 @@ html {
 
 /* global section styles */
 .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-title {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   font-size: 30px;
   font-family: 'Comfortaa Regular';
   padding: 0 0 .5em 0;
@@ -175,9 +147,7 @@ html {
 
 .section-image-wrapper,
 .section-copy {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   margin: 0 20px;
 }
 
@@ -204,24 +174,17 @@ html {
 
   .section-image-wrapper,
   .section-copy {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+    flex: 0 0 40%;
   }
 }
 
 .footer-section {
-  background-image: -webkit-gradient(linear, left top, right top, from(#634AB5), to(#F40683));
-  background-image: -webkit-linear-gradient(left, #634AB5 0%, #F40683 100%);
-  background-image: -o-linear-gradient(left, #634AB5 0%, #F40683 100%);
   background-image: linear-gradient(90deg, #634AB5 0%, #F40683 100%);
   height: 500px;
   position: relative;
 }
 
 .footer-section a {
-  -webkit-transition: 100ms ease-out;
-  -o-transition: 100ms ease-out;
   transition: 100ms ease-out;
 }
 
@@ -237,17 +200,10 @@ html {
 .footer-contact-wrapper {
   height: 80%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   z-index: 9999;
@@ -272,8 +228,6 @@ html {
 
 @media only screen and (min-width: 700px) {
   .footer-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
@@ -348,40 +302,35 @@ html {
 
 .tri-content img {
   -webkit-transform: scale(.65);
-          -ms-transform: scale(.65);
-      transform: scale(.65);
+          transform: scale(.65);
   position: absolute;
 }
 
 @media only screen and (min-width: 700px) {
   .tri-content img {
     -webkit-transform: scale(.8);
-            -ms-transform: scale(.8);
-        transform: scale(.8);
+            transform: scale(.8);
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .tri-content img {
     -webkit-transform: scale(.9);
-            -ms-transform: scale(.9);
-        transform: scale(.9);
+            transform: scale(.9);
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .tri-content img {
     -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-        transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @media only screen and (min-width: 1800px) {
   .tri-content img {
     -webkit-transform: scale(1.3);
-            -ms-transform: scale(1.3);
-        transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
