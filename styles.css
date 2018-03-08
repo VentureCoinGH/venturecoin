@@ -127,8 +127,9 @@ html {
 
 @media only screen and (min-width: 700px) {
   .team {
-    margin-top: -20px;
+    margin-top: -60px;
   }
+
   .investments {
     margin-top: 80px;
     margin-bottom: 180px;
