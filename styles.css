@@ -99,6 +99,10 @@ html {
 }
 
 @media only screen and (min-width: 700px) {
+  .banner-bg {
+    height: 130vh;
+  }
+
   .banner-copy {
     margin-top: -30vh;
   }
@@ -339,8 +343,12 @@ html {
 }
 
 @media only screen and (min-width: 700px) {
+  #triangles {
+    height: 130vh;
+  }
+
   .tri-content {
-    height: 48%;
+    height: 37%;
     width: 100%;
     margin-left: 0;
   }
