@@ -5,8 +5,17 @@
     src: url('assets/logo font/Comfortaa-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('assets/logo font/Comfortaa-Light.ttf') format('truetype');
+}
+
 html {
   -webkit-font-smoothing: antialiased;
+}
+
+#venturecoin {
+  font-family: 'Comfortaa-Light';
 }
 
 .banner {
@@ -322,7 +331,7 @@ html {
   position: absolute;
   left: 0;
   right: 0;
-  top: 77vh;
+  top: 79vh;
   height: 100%;
   overflow-x: hidden; }
   @media only screen and (min-width: 700px) {
