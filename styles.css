@@ -16,6 +16,10 @@ html {
   font-family: 'Comfortaa-Light';
 }
 
+#investments.portfolio-object {
+  padding-bottom: 2%;
+}
+
 .content-wrapper {
   overflow-x: hidden;
 }
